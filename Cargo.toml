@@ -1,8 +1,15 @@
 [package]
 name = "pamacy"
-version = "0.1.0"
+version = "0.0.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+async-std = "1.11.0"
+tide = "0.16.0"
+askama = "0.11.1"
+askama_tide = "0.14.0"
+sqlx = {version = "0.5.13", features = ["runtime-async-std-rustls", "postgres"]}
+anyhow = "1.0.57"
+dotenv = "0.15.0"
